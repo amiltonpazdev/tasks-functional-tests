@@ -2,13 +2,13 @@ package br.com.tasks.functional;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import junit.framework.Assert;
+@SuppressWarnings("deprecation")
 public class TasksTest {
 
 	public WebDriver acessarAplicacao() {
