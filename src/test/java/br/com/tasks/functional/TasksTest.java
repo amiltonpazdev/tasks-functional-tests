@@ -3,6 +3,7 @@ package br.com.tasks.functional;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -22,6 +23,7 @@ public class TasksTest {
 		
 		WebDriver driver = new RemoteWebDriver(url,cap);
 		driver.navigate().to("http://192.168.192.15:8001/tasks/");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		return driver;
 	}
