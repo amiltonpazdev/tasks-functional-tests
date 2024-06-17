@@ -11,6 +11,9 @@
               <artifactId>maven-surefire-plugin</artifactId>
               <version>2.20</version>
               <configuration>
+				 <excludes>
+					<exclude>**/HealthCheckIT.java</exclude>
+				 </excludes>
 				  <skip-Tests>${skip.surefire.tests}</skip-Tests>
                   <parallel>all</parallel>
                   <useUnlimitedThreads>true</useUnlimitedThreads>
